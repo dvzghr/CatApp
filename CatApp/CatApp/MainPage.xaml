@@ -1,16 +1,38 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml
+    version="1.0"
+    encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="CatApp.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+    <FlexLayout Margin="20"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Wrap="Wrap"
+                JustifyContent="SpaceEvenly">
+        <ImageButton WidthRequest="150"
+                     HeightRequest="100"
+                     Source="http://placekitten.com/g/150/100" />
+        <ImageButton WidthRequest="160"
+                     HeightRequest="100"
+                     Source="http://placekitten.com/g/160/100" />
+        <ImageButton WidthRequest="150"
+                     HeightRequest="100"
+                     Source="http://placekitten.com/g/150/110" />
+        <ImageButton WidthRequest="140"
+                     HeightRequest="100"
+                     Source="http://placekitten.com/g/140/100" />
+        <ImageButton WidthRequest="140"
+                     HeightRequest="110"
+                     Source="http://placekitten.com/g/140/110" />
+        <ImageButton WidthRequest="150"
+                     HeightRequest="90"
+                     Source="http://placekitten.com/g/150/90" />
+        <ImageButton WidthRequest="140"
+                     HeightRequest="120"
+                     Source="http://placekitten.com/g/140/120" />
+    </FlexLayout>
 </ContentPage>
